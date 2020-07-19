@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Rady Blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+          <h2 class="my-0 mr-md-auto font-weight-normal text-dark"><a href="/">Rady Blog</a></h2>
+          <nav class="my-2 my-md-0 mr-md-3">
+              <a class="p-2 text-dark" href="/about">About</a>
+          <a class="p-2 btn btn-dark" href="https://t.me/iamscriptkiddie" target="_blank">Telegram</a>
+            <a class="p-2 btn btn-dark" href="https://github.com/rady1337" target="_blank">GitHub</a>
+          </nav>
+        </div>
+    </header>
+    <div class="container mt-5">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+</body>
+</html>
